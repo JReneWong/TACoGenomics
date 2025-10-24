@@ -1,0 +1,27 @@
+# Nextflow runtime
+work/
+**/.nextflow*
+**/.nf-*
+**/.cache/
+
+# Pipeline data (do NOT track)
+SomaticCalling/InputData/
+SomaticCalling/GenomeRef/
+SomaticCalling/work/
+SomaticCalling/reports/
+
+# Results: keep folder, ignore content by default
+SomaticCalling/results/*
+!SomaticCalling/results/.gitkeep
+
+# Large bio files (catch-alls)
+*.fastq
+*.fastq.gz
+*.bam
+*.bai
+*.cram
+*.crai
+*.vcf
+*.vcf.gz
+*.tbi
+*.stats
